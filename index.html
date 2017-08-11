@@ -10,25 +10,82 @@
       <img src="img/logo.png" alt="Логотип">
     </div>
     <nav class="main-navigation">
-      <ul class="site-navigation">
-        <li>
-          <a href="#">Каталог</a>
+      <ul class="navigation-list">
+        <li class="navigation-item navigation-item--current">
+          <a class="navigation-link" href="#">Каталог</a>
         </li>
-        <li>
-          <a href="#">Доставка и оплата</a>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">Доставка и оплата</a>
         </li>
-        <li>
-          <a href="#">О компании</a>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">О компании</a>
         </li>
       </ul>
     </nav>
-    <div class="header-search"></div>
+    <div class="header-search">
+      <form action="#" class="search-form">
+        <input class="search" type="search" name="search">
+        <input class="" type="text">
+      </form>
+    </div>
     <ul class="user-block">
-      <li>
-      <a class="icon-login" href="#">Вход</a>
+      <li class="user-block-item">
+        <a class="icon-login" href="#">Вход</a>
+        <form action="#" class="form-login">
+          <input type="email" name="email" placeholder="Электронная почта">
+          <input type="password" name="pass" placeholder="Пароль">
+          <input class="btn" type="submit" value="Войти">
+        </form>
+        <p>
+          <a class="lost-password" href="#">Забыли пароль?</a>
+        </p>
+        <p>
+          <a class="new-account" href="#">Новая регистрация</a>
+        </p>
       </li>
-      <li>
-      <a class="icon-basket" href="#">Пусто</a>
+      <li class="user-block-item">
+        <a class="icon-basket" href="#">Пусто</a>
+        <table class="table-basket">
+          <tr>
+            <td>
+              <a class="delete" href="#">X</a>
+            </td>
+            <td>
+              <img src="img/ice-cream-small" alt="ice-cream">
+            </td>
+            <td>
+              <p>Пломбир с апельсиновым джемом</p>
+            </td>
+            <td>
+              <p>1,5кг x<span class="price">200 руб</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a class="delete" href="#">X</a>
+            </td>
+            <td>
+              <img src="img/ice-cream-small2" alt="ice-cream2">
+            </td>
+            <td>
+              <p>Клубничный пломбир с присыпкой из
+                белого </p>
+            </td>
+            <td>
+              <p>1,5 кг x <span class="price">200 руб</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="4">
+              <b class="total-price">Итого: 750 руб</b>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="4">
+              <a class="btn" href="#">Оформить заказ</a>
+            </td>
+          </tr>
+        </table>
       </li>
     </ul>
     <div class="information">
@@ -42,8 +99,10 @@
     <section class="slider">
       <div class="container">
         <div class="slider-title">
-          Крем-брюле и пломбир
-          с малиновым джемом
+          <h1>
+            Крем-брюле и пломбир
+            с малиновым джемом
+          </h1>
         </div>
         <div class="slider-btn">
           <a class="btn" href="#">Давайте оба!</a>
