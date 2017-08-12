@@ -6,114 +6,116 @@
   </head>
   <body>
   <header class="main-header">
-    <div class="header-logo">
-      <img src="img/logo.png" alt="Логотип">
-    </div>
-    <nav class="main-navigation">
-      <ul class="navigation-list">
-        <li class="navigation-item navigation-item--current">
-          <a class="navigation-link" href="#">Каталог</a>
+    <div class="container">
+      <div class="header-logo">
+        <img src="img/logo.png" alt="Логотип">
+      </div>
+      <nav class="main-navigation">
+        <ul class="navigation-list">
+          <li class="navigation-item navigation-item--current">
+            <a class="navigation-link" href="#">Каталог</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Доставка и оплата</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">О компании</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header-search">
+        <form action="#" class="search-form">
+          <input class="search-field" type="text">
+          <input class="search-submit" type="submit">
+        </form>
+      </div>
+      <ul class="user-block">
+        <li class="user-block-item">
+          <a class="icon-login" href="#">Вход</a>
+          <form action="#" class="form-login">
+            <input type="email" name="email" placeholder="Электронная почта">
+            <input type="password" name="pass" placeholder="Пароль">
+            <input class="btn" type="submit" value="Войти">
+          </form>
+          <p>
+            <a class="lost-password" href="#">Забыли пароль?</a>
+          </p>
+          <p>
+            <a class="new-account" href="#">Новая регистрация</a>
+          </p>
         </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">Доставка и оплата</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">О компании</a>
+        <li class="user-block-item">
+          <a class="icon-basket" href="#">Пусто</a>
+          <table class="table-basket">
+            <tr>
+              <td>
+                <a class="delete" href="#">X</a>
+              </td>
+              <td>
+                <img src="img/ice-cream-small" alt="ice-cream">
+              </td>
+              <td>
+                <p>Пломбир с апельсиновым джемом</p>
+              </td>
+              <td>
+                <p>1,5кг x<span class="price">200 руб</span></p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a class="delete" href="#">X</a>
+              </td>
+              <td>
+                <img src="img/ice-cream-small2" alt="ice-cream2">
+              </td>
+              <td>
+                <p>Клубничный пломбир с присыпкой из
+                  белого </p>
+              </td>
+              <td>
+                <p>1,5 кг x <span class="price">200 руб</span></p>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <b class="total-price">Итого: 750 руб</b>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <a class="btn" href="#">Оформить заказ</a>
+              </td>
+            </tr>
+          </table>
         </li>
       </ul>
-    </nav>
-    <div class="header-search">
-      <form action="#" class="search-form">
-        <input class="search-field" type="text">
-        <input class="search-submit" type="submit">
-      </form>
-    </div>
-    <ul class="user-block">
-      <li class="user-block-item">
-        <a class="icon-login" href="#">Вход</a>
-        <form action="#" class="form-login">
-          <input type="email" name="email" placeholder="Электронная почта">
-          <input type="password" name="pass" placeholder="Пароль">
-          <input class="btn" type="submit" value="Войти">
-        </form>
-        <p>
-          <a class="lost-password" href="#">Забыли пароль?</a>
+      <div class="information">
+        <p class="work-time">
+          С 10 до 20, ежедневно
         </p>
-        <p>
-          <a class="new-account" href="#">Новая регистрация</a>
+        <p class="phone-number">
+          8 812 450-25-25
         </p>
-      </li>
-      <li class="user-block-item">
-        <a class="icon-basket" href="#">Пусто</a>
-        <table class="table-basket">
-          <tr>
-            <td>
-              <a class="delete" href="#">X</a>
-            </td>
-            <td>
-              <img src="img/ice-cream-small" alt="ice-cream">
-            </td>
-            <td>
-              <p>Пломбир с апельсиновым джемом</p>
-            </td>
-            <td>
-              <p>1,5кг x<span class="price">200 руб</span></p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <a class="delete" href="#">X</a>
-            </td>
-            <td>
-              <img src="img/ice-cream-small2" alt="ice-cream2">
-            </td>
-            <td>
-              <p>Клубничный пломбир с присыпкой из
-                белого </p>
-            </td>
-            <td>
-              <p>1,5 кг x <span class="price">200 руб</span></p>
-            </td>
-          </tr>
-          <tr>
-            <td colspan="4">
-              <b class="total-price">Итого: 750 руб</b>
-            </td>
-          </tr>
-          <tr>
-            <td colspan="4">
-              <a class="btn" href="#">Оформить заказ</a>
-            </td>
-          </tr>
-        </table>
-      </li>
-    </ul>
-    <div class="information">
-      <p class="work-time">
-        С 10 до 20, ежедневно
-      </p>
-      <p class="phone-number">
-        8 812 450-25-25
-      </p>
-    </div>
-    <section class="slider">
-      <div class="container">
-        <div class="slider-title">
-          <h1>
-            Крем-брюле и пломбир
-            с малиновым джемом
-          </h1>
-        </div>
-        <div class="slider-btn">
-          <a class="btn" href="#">Давайте оба!</a>
-        </div>
-        <div class="slider-controls">
-          <div class="slider-controls-dot"></div>
-          <div class="slider-controls-dot"></div>
-          <div class="slider-controls-dot"></div>
-        </div>
       </div>
-    </section>
+      <section class="slider">
+        <div class="container">
+          <div class="slider-title">
+            <h1>
+              Крем-брюле и пломбир
+              с малиновым джемом
+            </h1>
+          </div>
+          <div class="slider-btn">
+            <a class="btn" href="#">Давайте оба!</a>
+          </div>
+          <div class="slider-controls">
+            <div class="slider-controls-dot"></div>
+            <div class="slider-controls-dot"></div>
+            <div class="slider-controls-dot"></div>
+          </div>
+        </div>
+      </section>
+    </div>
   </header>
   <main class="container">
     <section class="action">
@@ -139,7 +141,7 @@
         <img src="products-img" alt="ice-cream">
         <span class="bestseller">Хит</span>
         <p class="price-products">
-          310    /<span class="products-kg">кг</span>
+          кг<span class="products-kg">310/</span>
         </p>
         <p class="products-description">
           Сливочное с апельсиновым
@@ -150,7 +152,7 @@
         <img src="products-img2" alt="ice-cream2">
         <span class="bestseller">Хит</span>
         <p class="price-products">
-          380    /<span class="products-kg">кг</span>
+          кг<span class="products-kg">380/</span>
         </p>
         <p class="products-description">
           Сливочно-кофейное с кусочками шоколада
@@ -160,7 +162,7 @@
         <img src="products-img3" alt="ice-cream3">
         <span class="bestseller">Хит</span>
         <p class="price-products">
-          355    /<span class="products-kg">кг</span>
+          кг<span class="products-kg">355/</span>
         </p>
         <p class="products-description">
           Сливочно-клубничное с
@@ -171,7 +173,7 @@
         <img src="products-img4" alt="ice-cream4">
         <span class="bestseller">Хит</span>
         <p class="price-products">
-          415    /<span class="products-kg">кг</span>
+          кг<span class="products-kg">415/</span>
         </p>
         <p class="products-description">
           Сливочное крем-брюле с
