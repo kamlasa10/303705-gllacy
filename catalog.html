@@ -115,34 +115,50 @@
     </div>
     <div class="filter-block">
       <form action="#" class="filter-form">
-        <b class="filter-title">Сортировка</b>
-        <select class="filter-field">
-          <option value="filter">По популярности</option>
-          <option value="filter">По популярности</option>
-          <option value="filter">По популярности</option>
-        </select>
-        <b class="filter-title">цена: 100руб-500руб.</b>
-        <input class="filter-field" type="range">
-        <b class="filter-title">Жирность:</b>
-        <input type="radio" name="fat-%">
-        <span class="custom-radio">0%</span>
-        <input type="radio" name="fat-%" checked>
-        <span class="custom-radio">до 10%</span>
-        <input type="radio" name="fat-%">
-        <span class="custom-radio">до 30%</span>
-        <input type="radio" name="fat-%">
-        <span class="custom-radio">выше 30%</span>
-        <b class="filter-title">Наполнители:</b>
-        <input class="custom-checkbox" type="checkbox" checked>
-        <span class="filter-text">шоколадные</span>
-        <input class="custom-checkbox" type="checkbox" checked>
-        <span class="filter-text">сахарные присыпки</span>
-        <input class="custom-checkbox" type="checkbox">
-        <span class="filter-text">Фрукты</span>
-        <input class="custom-checkbox" type="checkbox">
-        <span class="filter-text">сиропы</span>
-        <input class="custom-checkbox" type="checkbox">
-        <span class="filter-text">джемы</span>
+        <div class="filter-item">
+          <div class="filter-shadow">
+            <b class="filter-title">Сортировка</b>
+            <select class="filter-field">
+              <option value="filter">По популярности</option>
+              <option value="filter">По популярности</option>
+              <option value="filter">По популярности</option>
+            </select>
+          </div>
+        </div>
+        <div class="filter-item">
+          <div class="filter-shadow">
+            <b class="filter-title">цена: 100руб-500руб.</b>
+            <input class="filter-field" type="range">
+          </div>
+        </div>
+        <div class="filter-item">
+          <div class="filter-shadow">
+            <b class="filter-title">Жирность:</b>
+              <input class="custom-radio" type="radio" name="fat-%" id="filter-label">
+            <label class="filter-radio-text" for="filter-label">0%</label>
+            <input class="custom-radio" type="radio" name="fat-%" checked id="filter-label2">
+            <label class="filter-radio-text" for="filter-label2">до 10%</label>
+            <input class="custom-radio" type="radio" name="fat-%" id="filter-label3">
+            <label class="filter-radio-text" for="filter-label3">до 30%</label>
+            <input class="custom-radio" type="radio" name="fat-%" id="filter-label4">
+            <label class="filter-radio-text">выше 30%</label>
+          </div>
+        </div>
+        <div class="filter-item">
+          <div class="filter-shadow">
+            <b class="filter-title">Наполнители:</b>
+            <input class="custom-checkbox" type="checkbox" checked id="filter-checkbox">
+            <label class="filter-checkbox-text" for="filter-checkbox">шоколадные</label>
+            <input class="custom-checkbox" type="checkbox" checked id="filter-checkbox2">
+            <label class="filter-checkbox-text" for="filter-checkbox2">сахарные присыпки</label>
+            <input class="custom-checkbox" type="checkbox" id="filter-checkbox3">
+            <label for="filter-checkbox3" class="filter-text">Фрукты</label>
+            <input class="custom-checkbox" type="checkbox" id="filter-checkbox4">
+            <label class="filter-checkbox-text" for="filter-checkbox4"></label>
+            <input class="custom-checkbox" type="checkbox" id="filter-checkbox5">
+            <label class="filter-checkbox-text" for="filter-checkbox5">джемы</label>
+          </div>
+        </div>
         <input class="btn btn-border-red" type="submit" value="Применить">
       </form>
     </div>
