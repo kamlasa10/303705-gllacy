@@ -1,0 +1,23 @@
+.slider-title {
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.action-title {
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.action-description {
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: bold;
+  color: #ffffff;
+}
