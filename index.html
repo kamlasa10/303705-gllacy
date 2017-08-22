@@ -10,14 +10,14 @@
   <header class="main-header">
     <div class="container">
       <div class="header-logo">
-        <img src="img/logo.png" alt="Логотип">
+        <img src="img/logo.svg" alt="Логотип">
       </div>
       <nav class="main-navigation">
         <ul class="navigation-list">
-          <li class="navigation-item navigation-item--current">
+          <li class="navigation-item">
             <a class="navigation-link" href="catalog.html">Каталог</a>
             <ul class="dropdown-list">
-              <li class="dropdown-item">
+              <li class="dropdown-item new">
                 <a class="dropdown-link" href="#">Новинки</a>
               </li>
               <li class="dropdown-item">
@@ -43,28 +43,28 @@
         </ul>
       </nav>
       <div class="header-search">
+        <a class="search-loupe" href="#">Поиск</a>
         <form action="#" class="search-form">
-          <input class="search-field" type="text">
-          <input class="search-submit" type="submit">
+          <input class="search-field" type="text" placeholder="Что Ищем?">
         </form>
       </div>
       <ul class="user-block">
         <li class="user-block-item">
-          <a class="icon-login" href="#">Вход</a>
+          <a class=" user-link icon-login" href="#">Вход</a>
           <form action="#" class="form-login">
-            <input type="email" name="email" placeholder="Электронная почта">
-            <input type="password" name="pass" placeholder="Пароль">
+            <input class="login-field" type="email" name="email" placeholder="Электронная почта">
+            <input class="login-field" type="password" name="pass" placeholder="Пароль">
             <input class="btn" type="submit" value="Войти">
+            <p>
+              <a class="lost-password" href="#">Забыли пароль?</a>
+            </p>
+            <p>
+              <a class="lost-password" href="#">Новая регистрация</a>
+            </p>
           </form>
-          <p>
-            <a class="lost-password" href="#">Забыли пароль?</a>
-          </p>
-          <p>
-            <a class="new-account" href="#">Новая регистрация</a>
-          </p>
         </li>
         <li class="user-block-item">
-          <a class="icon-basket" href="#">Пусто</a>
+          <a class="user-link icon-basket" href="#">Пусто</a>
           <table class="table-basket">
             <tr>
               <td>
@@ -79,8 +79,11 @@
               <td>
                 <p>1,5кг x<span class="price">200 руб</span></p>
               </td>
+              <td>
+                300 руб
+              </td>
             </tr>
-            <tr>
+            <tr class="border-bottom">
               <td>
                 <a class="delete" href="#">Убрать</a>
               </td>
@@ -93,6 +96,9 @@
               </td>
               <td>
                 <p>1,5 кг x <span class="price">200 руб</span></p>
+              </td>
+              <td>
+                450 руб
               </td>
             </tr>
             <tr>
