@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title> Gllacy Shop</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -43,7 +43,9 @@
         </ul>
       </nav>
       <div class="header-search">
-        <a class="search-loupe" href="#">Поиск</a>
+        <a class="search-loupe" href="#">
+          <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17"><path class="loupe-img" fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/></svg>
+        </a>
         <form action="#" class="search-form">
           <input class="search-field" type="text" placeholder="Что Ищем?">
         </form>
@@ -131,7 +133,7 @@
             </h1>
           </div>
           <div class="slider-btn">
-            <a class="btn" href="#">Давайте оба!</a>
+            <a class="btn btn-big" href="#">Давайте оба!</a>
           </div>
           <div class="slider-controls">
             <div class="slider-controls-dot"></div>
@@ -144,7 +146,7 @@
   </header>
   <main class="container">
     <section class="action">
-      <div class="action-item">
+      <div class="action-item raspberry-bg">
         <h2 class="action-title">Малинка даром!</h2>
           <p class="action-description">
             При покупке 2 кг любого фруктового мороженого,
@@ -152,7 +154,7 @@
           </p>
         <a class="btn" href="#">Хочу варенье!</a>
       </div>
-      <div class="action-item">
+      <div class="action-item ">
         <h2 class="action-title">Шоколадки даром!</h2>
         <p class="action-description">
           При покупке 2 кг пломбира,
@@ -169,9 +171,10 @@
           кг<span class="products-kg">310/</span>
         </p>
         <p class="products-description">
-          Сливочное с апельсиновым
-          джемом и цитрусовой стружкой
+          <a class="products-link" href="#">Сливочное с апельсиновым
+          джемом и цитрусовой стружкой</a>
         </p>
+        <a class="btn fest-view" href="#">Быстрий просмотр</a>
       </div>
       <div class="products-item">
         <img src="img/products-img2.png" width="267" height="267" alt="products-img2">
@@ -180,8 +183,9 @@
           кг<span class="products-kg">380/</span>
         </p>
         <p class="products-description">
-          Сливочно-кофейное с кусочками шоколада
+          <a class="products-link" href="#">Сливочно-кофейное с кусочками шоколада</a>
         </p>
+        <a class="btn fest-view" href="#">Быстрий просмотр</a>
       </div>
       <div class="products-item">
         <img src="img/products-img3.png" width="267" height="267" alt="products-img3">
@@ -190,9 +194,10 @@
           кг<span class="products-kg">355/</span>
         </p>
         <p class="products-description">
-          Сливочно-клубничное с
-          присыпкой из белого шоколада
+          <a class="products-link" href="#">Сливочно-клубничное с
+          присыпкой из белого шоколада</a>
         </p>
+        <a class="btn fest-view" href="#">Быстрий просмотр</a>
       </div>
       <div class="products-item">
         <img src="img/products-img4.png" width="267" height="267" alt="products-img4">
@@ -201,9 +206,10 @@
           кг<span class="products-kg">415/</span>
         </p>
         <p class="products-description">
-          Сливочное крем-брюле с
-          карамельной подливкой
+          <a class="products-link" href="">Сливочное крем-брюле с
+            карамельной подливкой</a>
         </p>
+        <a class="btn fest-view" href="#">Быстрий просмотр</a>
       </div>
     </section>
     <section class="features">
@@ -236,21 +242,25 @@
     </section>
     <article class="post">
       <p class="post-new">Новое в нашем блоге</p>
-      <b class="post-title">10 способов сервировки фруктовых шербетов к столу</b>
+      <a class="post-description" href="#">
+        10 способов сервировки
+        фруктовых щербетов к
+        столу
+      </a>
     </article>
     <div class="subscribe">
-      <p class="subscribe-description">Подпишитесь на нашу сладкую рассылку
-        и будете всегда в курсе всего самого вкусного, что у нас происходит.
-        Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
       <form action="#" class="subscribe-form">
+        <p class="subscribe-description">Подпишитесь на нашу сладкую рассылку
+          и будете всегда в курсе всего самого вкусного, что у нас происходит.
+          Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
         <input class="subscribe-email" type="text" name="email" placeholder="Электронная почта">
-        <input class="subscribe-submit" type="submit" value="Отправить">
+        <input class="btn" type="submit" value="Отправить">
       </form>
     </div>
     <section class="maps">
-      <img src="img/map" alt="map">
+      <img src="img/maps.jpg" width="1200" height="430" alt="map">
       <div class="contacts">
-        <p>Адрес главного офиса и офлайн магазина</p>
+        <p class="contacts-title">Адрес главного офиса и офлайн магазина</p>
         <b class="contacts-adress">ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
         <p>
           Для заказов по телефону:
@@ -258,7 +268,7 @@
         <b class="contacts-adress">
           8 812 450-25-25
         </b>
-        <p>
+        <p class="contacts-title">
           (с 10 до 20 ежедневно)
         </p>
         <a class="btn" href="#">Форма обратной связи</a>
@@ -268,35 +278,34 @@
   <footer class="main-footer">
     <div class="container">
       <div class="social">
-        <a href="#" class="social-link">Twiter</a>
-        <a href="#" class="social-link">Instagram</a>
-        <a href="#" class="social-link">Facebook</a>
-        <a href="#" class="social-link">Vk</a>
+        <a href="#" class="social-link social-link-tw">Twiter</a>
+        <a href="#" class="social-link social-link-inst">Instagram</a>
+        <a href="#" class="social-link social-link-fb">Facebook</a>
+        <a href="#" class="social-link social-link-vk">Vk</a>
       </div>
       <div class="about">
         <ul class="about-list">
-          <li class="abous-item iconed">
-            <a href="#">Для поставщиков</a>
+          <li class="about-item iconed">
+            <a class="about-link" href="#">Для поставщиков</a>
           </li>
-          <li class="abous-item">
-            <a href="#">О производстве</a>
+          <li class="about-item">
+            <a class="about-link" href="#">О производстве</a>
           </li>
-          <li class="abous-item">
-            <a href="#">Наши документы</a>
+          <li class="about-item">
+            <a class="about-link" href="#">Наши документы</a>
           </li>
-          <li class="abous-item">
-            <a href="#">Экологические стандарты</a>
+          <li class="about-item">
+            <a class="about-link" href="#">Экологические стандарты</a>
           </li>
         </ul>
       </div>
       <div class="author">
         <div class="footer-logo">
           <a href="https://htmlacademy.ru/">
-            <img src="img/footer-logo" alt="footer-logo">
-            Логотип html academy
+            <img src="img/logo-htmlacademy.svg" alt="footer-logo">
           </a>
         </div>
-        <a href="https://htmlacademy.ru/">Сделано в HTML Academy © 2017</a>
+        <a class="htmlacademy-link" href="https://htmlacademy.ru/">Сделано в HTML Academy &copy; 2017</a>
       </div>
     </div>
   </footer>
