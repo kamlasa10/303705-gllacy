@@ -94,12 +94,26 @@ body {
 }
 
 .user-link {
+  position: relative;
+  padding: 8px 16px;
+  padding-left: 30px;
   color: #ffffff;
   font-weight: 500;
   text-decoration: none;
   border-radius: 25%;
   background-color: #a1b4a9;
   transition: 0.2s;
+}
+
+.icon-login::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 49px;
+  height: 49px;
+  background-image: url("../img/entrance.svg");
+  background-repeat: no-repeat;
 }
 
 .user-link:hover {
@@ -121,11 +135,29 @@ body {
   font-size: 18px;
   line-height: 24px;
   color: #ffffff;
-  background-color: #f06341;
+  background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
   border-radius: 10px;
   border: none;
   text-decoration: none;
   cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.004);
+}
+
+.btn:active {
+  background-image: -moz-linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
+  box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 0.004);
 }
 
 .lost-password {
@@ -162,7 +194,16 @@ body {
 .slider-title {
   font-size: 60px;
   line-height: 60px;
-  font-weight: bold;
+}
+
+.raspberry-bg {
+  background-image: url("../img/raspberry-bg.jpg");
+  background-repeat: no-repeat;
+}
+
+.chocolate-bg {
+  background-image: url("../img/chocolate-bg.jpg");
+  background-repeat: no-repeat;
 }
 
 .action-title {
@@ -182,9 +223,25 @@ body {
   line-height: 44px;
 }
 
+.products-item {
+  position: relative;
+  transition: 0.2s;
+}
+
+.fest-view {
+  display: none;
+  position: absolute;
+  left: 100px;
+  bottom: 60px;
+}
+
 .products-item:hover {
   border-radius: 5px;
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+}
+
+.products-item:hover .fest-view {
+  display: block;
 }
 
 .fest-view {
@@ -235,10 +292,19 @@ body {
   border-radius: 3px;
 }
 
+.maps .container{
+  position: relative;
+}
 
 .contacts {
+  position: absolute;
+  width: 293px;
+  top: 60px;
+  right: 1px;
+  padding: 25px 20px;
   color: #000000;
   background: #ffffff;
+  border-radius: 15px;
 }
 
 .contacts-title {
@@ -260,17 +326,6 @@ body {
   border-radius: 50%;
 }
 
-.Обводка {
-  background-color: rgb(255, 255, 255);
-  opacity: 0.502;
-  position: absolute;
-  left: 28px;
-  top: 2349px;
-  width: 38px;
-  height: 38px;
-  z-index: 79;
-}
-
 .about-item {
   font-size: 13px;
   line-height: 18px;
@@ -286,6 +341,49 @@ body {
   line-height: 18px;
   color: #ffffff;
 }
+
+.breadcrumbs-list {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.breadcrumbs-link {
+  color: #ffffff;
+  text-decoration: underline #aebeb5;
+}
+
+.heading-title {
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.filter-title {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.filter-shadow {
+  background-color: #aabab0;
+  border-radius: 25%;
+}
+
+.filter-field {
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.filter-radio-text,
+.filter-checkbox-text{
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+
+
+
+
 
 
 
