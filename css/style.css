@@ -31,6 +31,7 @@ body {
 .navigation-link{
   color: #ffffff;
   font-weight: bold;
+  text-decoration: underline #adc4b7;
 }
 
 .dropdown-link {
@@ -202,11 +203,18 @@ body {
 .raspberry-bg {
   background-image: url("../img/raspberry-bg.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .chocolate-bg {
   background-image: url("../img/chocolate-bg.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.action-item {
+  width: 560px;
+  border-radius: 5px;
 }
 
 .action-title {
@@ -214,7 +222,6 @@ body {
   line-height: 41px;
   font-weight: bold;
 }
-
 
 .action-description {
   font-size: 18px;
@@ -271,6 +278,7 @@ body {
 .post {
   background-image: url("../img/post-background.jpg");
   background-repeat: repeat;
+  background-size: cover;
   border-radius: 8px;
 }
 
@@ -283,6 +291,7 @@ body {
 
 .subscribe {
   background-image: url("../img/bg-post.svg");
+  background-repeat: no-repeat;
 }
 
 .subscribe-form {
@@ -293,6 +302,13 @@ body {
 .subscribe-email {
   border:  1px solid #d3d3d2;
   border-radius: 3px;
+}
+
+.maps {
+  min-height: 430px;
+  background-image: url("../img/maps.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .maps .container{
@@ -329,10 +345,17 @@ body {
   border-radius: 50%;
 }
 
+.about-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 .about-item {
   font-size: 13px;
   line-height: 18px;
 }
+
 
 .about-link {
   color: #ffffff;
@@ -343,6 +366,11 @@ body {
   font-size: 12px;
   line-height: 18px;
   color: #ffffff;
+}
+
+.footer-logo img {
+  width: 108px;
+  height: 39px;
 }
 
 .breadcrumbs-list {
