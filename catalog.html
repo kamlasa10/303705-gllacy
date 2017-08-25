@@ -3,19 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <title>Gllacy Shop</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="main-header">
     <div class="container">
       <div class="header-logo">
-        <img src="img/logo.svg"  alt="Логотип">
+        <a charset="header-logo" href="index.html">
+          <img src="img/logo.svg" alt="Логотип">
+        </a>
       </div>
       <nav class="main-navigation">
         <ul class="navigation-list">
           <li class="navigation-item navigation-item--current">
             <a class="navigation-link" href="#">Каталог</a>
+            <ul class="dropdown-list">
+              <li class="dropdown-item">
+                <a class="dropdown-link" href="#">Новинки</a>
+              </li>
+              <li class="dropdown-item">
+                <a class="dropdown-link" href="#">Сливочное</a>
+              </li>
+              <li class="dropdown-item">
+                <a class="dropdown-link" href="#">Щербеты</a>
+              </li>
+              <li class="dropdown-item">
+                <a class="dropdown-link" href="#">Фруктовый лед</a>
+              </li>
+              <li class="dropdown-item">
+                <a class="dropdown-link" href="#">Мелорин</a>
+              </li>
+            </ul>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">Доставка и оплата</a>
@@ -33,7 +53,7 @@
       </div>
       <ul class="user-block">
         <li class="user-block-item">
-          <a class="icon-login" href="#">Вход</a>
+          <a class="user-link icon-login" href="#">Вход</a>
           <form action="#" class="form-login">
             <input type="email" name="email" placeholder="Электронная почта">
             <input type="password" name="pass" placeholder="Пароль">
@@ -43,18 +63,18 @@
             <a class="lost-password" href="#">Забыли пароль?</a>
           </p>
           <p>
-            <a class="new-account" href="#">Новая регистрация</a>
+            <a class="lost-password" href="#">Новая регистрация</a>
           </p>
         </li>
         <li class="user-block-item">
-          <a class="icon-basket" href="#">Пусто</a>
+          <a class=" user-link icon-basket" href="#">Пусто</a>
           <table class="table-basket">
             <tr>
               <td>
-                <a class="delete" href="#">X</a>
+                <a class="delete" href="#">Убрать</a>
               </td>
-              <td>
-                <img src="img/ice-cream-small" alt="ice-cream">
+              <td class="ice-cream-small">
+                <img src="img/ice-cream-small.png" width="33" height="33" alt="ice-cream">
               </td>
               <td>
                 <p>Пломбир с апельсиновым джемом</p>
@@ -62,13 +82,16 @@
               <td>
                 <p>1,5кг x<span class="price">200 руб</span></p>
               </td>
-            </tr>
-            <tr>
               <td>
-                <a class="delete" href="#">X</a>
+                300 руб
               </td>
+            </tr>
+            <tr class="border-bottom">
               <td>
-                <img src="img/ice-cream-small2" alt="ice-cream2">
+                <a class="delete" href="#">Убрать</a>
+              </td>
+              <td class="ice-cream-small">
+                <img src="img/ice-cream-small2.png" width="33" height="33"  alt="ice-cream2">
               </td>
               <td>
                 <p>Клубничный пломбир с присыпкой из
@@ -76,6 +99,9 @@
               </td>
               <td>
                 <p>1,5 кг x <span class="price">200 руб</span></p>
+              </td>
+              <td>
+                450 руб
               </td>
             </tr>
             <tr>
@@ -115,12 +141,13 @@
         </li>
       </ul>
     </div>
+    <h1 class="heading-title">Сливочное мороженое</h1>
     <div class="filter-block">
       <form action="#" class="filter-form">
         <div class="filter-item">
           <div class="filter-shadow">
             <b class="filter-title">Сортировка</b>
-            <select class="filter-field">
+            <select class="filter-field filter-field-hover">
               <option value="filter">По популярности</option>
               <option value="filter">По популярности</option>
               <option value="filter">По популярности</option>
@@ -161,10 +188,9 @@
             <label class="filter-checkbox-text" for="filter-checkbox5">джемы</label>
           </div>
         </div>
-        <input class="btn btn-border-red" type="submit" value="Применить">
+        <input class="filter-submit" type="submit" value="Применить">
       </form>
     </div>
-    <h1 class="heading-title">Сливочное мороженое</h1>
     <section class="products">
       <div class="products-item">
         <img src="img/products-img.png" width="267" height="267" alt="products-img">
@@ -175,6 +201,7 @@
           Сливочное с апельсиновым
           джемом и цитрусовой стружкой
         </p>
+        <a class="btn fest-view" href="#">Быстрий просмотр</a>
       </div>
       <div class="products-item">
         <img src="img/products-img2.png" width="267" height="267" alt="products-img2">
@@ -184,6 +211,7 @@
         <p class="products-description">
           Сливочно-кофейное с кусочками шоколада
         </p>
+        <a class="btn fest-view" href="#">Быстрий просмотр</a>
       </div>
       <div class="products-item">
         <img src="img/products-img3.png" width="267" height="267" alt="products-img3">
@@ -194,6 +222,7 @@
           Сливочно-клубничное с
           присыпкой из белого шоколада
         </p>
+        <a class="btn fest-view" href="#">Быстрий просмотр</a>
       </div>
       <div class="products-item">
         <img src="img/products-img4.png" width="267" height="267" alt="products-img4">
@@ -204,6 +233,7 @@
           Сливочное крем-брюле с
           карамельной подливкой
         </p>
+        <a class="btn fest-view" href="#">Быстрий просмотр</a>
       </div>
       <div class="products-item">
         <img src="img/products-img5.png" width="267" height="267" alt="products-img5">
@@ -213,6 +243,7 @@
         <p class="products-description">
           Сливочное с брусничным джемом
         </p>
+        <a class="btn fest-view" href="#">Быстрий просмотр</a>
       </div>
       <div class="products-item">
         <img src="img/products-img6.png" width="267" height="267" alt="products-img6">
@@ -223,6 +254,7 @@
           Сливочно-черничное с цельными
           ягодами черники
         </p>
+        <a class="btn fest-view" href="#">Быстрий просмотр</a>
       </div>
       <div class="products-item">
         <img src="img/products-img7.png" width="267" height="267" alt="products-img7">
@@ -233,6 +265,7 @@
           Сливочно0-лимонное с
           карамельной присыпкой
         </p>
+        <a class="btn fest-view" href="#">Быстрий просмотр</a>
       </div>
       <div class="products-item">
         <img src="img/products-img8.png" width="267" height="267" alt="products-img8">
@@ -242,6 +275,7 @@
         <p class="products-description">
           Сливочное с шоколадной стружкой
         </p>
+        <a class="btn fest-view" href="#">Быстрий просмотр</a>
       </div>
       <div class="products-item">
         <img src="img/products-img9.png" width="267" height="267" alt="products-img9">
@@ -252,6 +286,7 @@
           Сливочно-ванильное с
           кусочками шоколада
         </p>
+        <a class="btn fest-view" href="#">Быстрий просмотр</a>
       </div>
       <div class="products-item">
         <img src="img/products-img10.png" width="267" height="267" alt="products-img10">
@@ -270,6 +305,7 @@
         <p class="products-description">
           Сливочное с кусочками черного шоколада
         </p>
+        <a class="btn fest-view" href="#">Быстрий просмотр</a>
       </div>
       <div class="products-item">
         <img src="img/products-img12.png" width="267" height="267" alt="products-img12">
@@ -279,6 +315,7 @@
         <p class="products-description">
           Сливочное с мятным сиропом
         </p>
+        <a class="btn fest-view" href="#">Быстрий просмотр</a>
       </div>
     </section>
     <div class="paginator">
@@ -310,32 +347,34 @@
   <footer class="main-footer">
     <div class="container">
       <div class="social">
-        <a href="#" class="social-link">Twiter</a>
-        <a href="#" class="social-link">Instagram</a>
-        <a href="#" class="social-link">Facebook</a>
-        <a href="#" class="social-link">Vk</a>
+        <a href="#" class="social-link social-link-tw">Twiter</a>
+        <a href="#" class="social-link social-link-inst">Instagram</a>
+        <a href="#" class="social-link social-link-fb">Facebook</a>
+        <a href="#" class="social-link social-link-vk">Vk</a>
       </div>
       <div class="about">
         <ul class="about-list">
-          <li class="abous-item iconed">
-            <a href="#">Для поставщиков</a>
+          <li class="about-item iconed">
+            <a class="about-link" href="#">Для поставщиков</a>
           </li>
-          <li class="abous-item">
-            <a href="#">О производстве</a>
+          <li class="about-item">
+            <a class="about-link" href="#">О производстве</a>
           </li>
-          <li class="abous-item">
-            <a href="#">Наши документы</a>
+          <li class="about-item">
+            <a class="about-link" href="#">Наши документы</a>
           </li>
-          <li class="abous-item">
-            <a href="#">Экологические стандарты</a>
+          <li class="about-item">
+            <a class="about-link" href="#">Экологические стандарты</a>
           </li>
         </ul>
       </div>
       <div class="author">
         <div class="footer-logo">
-          <img src="img/footer-logo" alt="footer-logo">
+          <a href="https://htmlacademy.ru/">
+            <img src="img/logo-htmlacademy.svg" alt="footer-logo">
+          </a>
         </div>
-        <a href="#">Сделано в HTML Academy © 2017</a>
+        <a class="htmlacademy-link" href="https://htmlacademy.ru/">Сделано в HTML Academy &copy; 2017</a>
       </div>
     </div>
   </footer>
