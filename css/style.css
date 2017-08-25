@@ -1,3 +1,7 @@
+*, *::before,
+*::after {
+  box-sizing: inherit;
+}
 body {
   margin: 0;
   padding: 0;
@@ -6,12 +10,21 @@ body {
   font-family: 'Roboto', 'Arial', sans-serif;
   color: #ffffff;
   background-color: #849d8f;
+  box-sizing: border-box;
 }
 
 .container {
   width: 1140px;
   margin: 0 auto;
   padding: 0 10px;
+}
+
+.main-header {
+  padding-top: 10px;
+}
+
+.header-logo {
+  margin-right: 20px;
 }
 
 .navigation-list,
@@ -24,14 +37,22 @@ body {
 }
 
 .dropdown-list {
+  display: none;
   background-color: #f8f7f4;
   border-radius: 5px;
 }
 
 .navigation-link{
+  display: block;
+  padding: 10px 14px;
+  border-radius: 15px;
   color: #ffffff;
   font-weight: bold;
   text-decoration: underline #adc4b7;
+}
+
+.navigation-link:hover {
+  text-decoration: none;
 }
 
 .dropdown-link {
@@ -212,8 +233,11 @@ body {
   background-size: cover;
 }
 
+.action {
+  margin-bottom: 40px;
+}
+
 .action-item {
-  width: 560px;
   border-radius: 5px;
 }
 
@@ -231,6 +255,10 @@ body {
 .btn-big {
   font-size: 32px;
   line-height: 44px;
+}
+
+.products {
+  margin-bottom: 40px;
 }
 
 .products-item {
@@ -264,6 +292,9 @@ body {
 }
 
 .features {
+  width: 100%;
+  margin-bottom: 40px;
+  padding: 25px 20px;
   color: #000000;
   background-image: url("../img/features-background.jpg");
   background-repeat: repeat;
@@ -276,10 +307,15 @@ body {
 }
 
 .post {
-  background-image: url("../img/post-background.jpg");
+  min-height: 220px;
+  background-image: url("../img/post-bg.png");
   background-repeat: repeat;
   background-size: cover;
-  border-radius: 8px;
+  border-radius: 10px;
+}
+
+.post-new {
+  color: #000000;
 }
 
 .post-description {
@@ -288,15 +324,20 @@ body {
   color: #000000;
 }
 
-
 .subscribe {
+  min-height: 220px;
+  margin-top: 16px;
+  padding: 5px;
+  background-color: #f9eae5;
   background-image: url("../img/bg-post.svg");
-  background-repeat: no-repeat;
+  border-radius: 10px;
 }
 
 .subscribe-form {
+  padding: 30px 20px;
   background-color: #f8f7f4;
   color: #000000;
+  border-radius: 10px;
 }
 
 .subscribe-email {
@@ -334,6 +375,10 @@ body {
 .contacts-adress {
   font-size: 18px;
   line-height: 24px;
+}
+
+.main-footer {
+  padding: 35px 0;
 }
 
 .social-link {
@@ -465,6 +510,98 @@ body {
   color: #ffffff;
   background-color: #9db1a5;
 }
+
+.row {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.user-row {
+  margin: 0 -5px;
+}
+
+.row li {
+  padding: 0 5px;
+}
+
+.user-left {
+  margin-left: auto;
+}
+
+.search-form {
+  display: none;
+}
+
+.form-login {
+  display: none;
+}
+
+.navigation-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.navigation-row {
+  align-items: center;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.action-row {
+  margin: 0 -15px;
+}
+
+.action-row li {
+  width: 50%;
+  padding: 0 15px;
+}
+
+.products-row {
+  margin: 0 -15px;
+}
+
+.products-row li {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.features-row {
+  flex-wrap: wrap;
+  margin: 0 -13px;
+}
+
+.features-row li {
+  width: 50%;
+  padding: 0 -13px;
+}
+
+.row-post {
+  margin: 0 -13px;
+  margin-bottom: 40px;
+}
+
+.row-post li {
+  width: 50%;
+  padding: 0 13px;
+}
+
+.footer-row {
+  align-items: center;
+}
+
+.footer-row li {
+  width: 33%;
+  justify-content: space-between;
+}
+
+
+
 
 
 
