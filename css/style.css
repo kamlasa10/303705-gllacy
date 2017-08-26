@@ -2,6 +2,8 @@
 *::after {
   box-sizing: inherit;
 }
+
+
 body {
   margin: 0;
   padding: 0;
@@ -17,6 +19,11 @@ body {
   width: 1140px;
   margin: 0 auto;
   padding: 0 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .main-header {
@@ -431,30 +438,27 @@ body {
   width: 267px;
   margin: 0;
   padding: 0;
-  font-size: 0;
+  font-size: 14px;
+  line-height: 16px;
   list-style-type: none;
 }
 
 .breadcrumbs-item {
   position: relative;
   display: inline-block;
-  padding-right: 15px;
-  margin-right: 10px;
-  font-size: 14px;
-  line-height: 16px;
 }
 
-.breadcrumbs-item::after {
+.breadcrumbs-item:not(:last-child) {
+  padding-right: 15px;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.breadcrumbs-item:not(:last-child):after {
   content: "»";
   position: absolute;
   top: 0;
   right: 0;
-}
-
-.breadcrumbs-item:last-child::after {
-  margin-right: 0;
-  padding-right: 0;
-  content: "";
 }
 
 .breadcrumbs-link {
@@ -519,15 +523,15 @@ body {
   box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.004);
 }
 
-.paginator {
-  width: 267px;
-}
-
 .paginator-list {
   display: flex;
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.pagination-left {
+  margin-left: auto;
 }
 
 .paginator-link {
@@ -644,6 +648,14 @@ body {
   width: 80%;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.filter-row li {
+  margin-bottom: 15px;
+}
+
+.row-grow {
+  flex-grow: 1;
 }
 
 
