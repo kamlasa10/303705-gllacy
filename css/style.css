@@ -138,6 +138,15 @@ body {
   background-repeat: no-repeat;
 }
 
+.icon-basket-active {
+  color: #000000;
+  background-color: #f7f6f3;
+}
+
+.table-basket {
+  display: none;
+}
+
 .user-link:hover {
   color: #000000;
   background-color: #f8f7f4;
@@ -350,6 +359,7 @@ body {
   background-image: url("../img/maps.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 .maps .container{
@@ -360,7 +370,7 @@ body {
   position: absolute;
   width: 293px;
   top: 60px;
-  right: 1px;
+  right: 0;
   padding: 25px 20px;
   color: #000000;
   background: #ffffff;
@@ -401,7 +411,6 @@ body {
   line-height: 18px;
 }
 
-
 .about-link {
   color: #ffffff;
   text-decoration: underline #9db1a5;
@@ -419,8 +428,33 @@ body {
 }
 
 .breadcrumbs-list {
+  width: 267px;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  list-style-type: none;
+}
+
+.breadcrumbs-item {
+  position: relative;
+  display: inline-block;
+  padding-right: 15px;
+  margin-right: 10px;
   font-size: 14px;
   line-height: 16px;
+}
+
+.breadcrumbs-item::after {
+  content: "»";
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.breadcrumbs-item:last-child::after {
+  margin-right: 0;
+  padding-right: 0;
+  content: "";
 }
 
 .breadcrumbs-link {
@@ -431,6 +465,10 @@ body {
 .heading-title {
   font-size: 35px;
   line-height: 41px;
+}
+
+.filter-form {
+  margin-bottom: 40px;
 }
 
 .filter-title {
@@ -578,7 +616,8 @@ body {
 
 .features-row li {
   width: 50%;
-  padding: 0 -13px;
+  padding: 0 13px;
+  padding-left: 60px;
 }
 
 .row-post {
@@ -593,12 +632,20 @@ body {
 
 .footer-row {
   align-items: center;
-}
-
-.footer-row li {
-  width: 33%;
   justify-content: space-between;
 }
+
+
+.products-row--wrap {
+  flex-wrap: wrap;
+}
+
+.filter-row {
+  width: 80%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 
 
 
