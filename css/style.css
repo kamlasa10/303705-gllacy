@@ -412,8 +412,12 @@ img {
 
 .price-products {
   margin: 0;
-  margin-bottom: -60px;
+  margin-top: -60px;
+  margin-left: -100px;
   padding: 0;
+  font-size: 30px;
+  line-height: 35px;
+  font-weight: bold;
 }
 
 .products-kg {
@@ -427,8 +431,8 @@ img {
 .products-kg::after {
   content: "";
   position: absolute;
-  top: 9px;
-  right: 20px;
+  top: 10px;
+  right: 4px;
   width: 30px;
   height: 35px;
   background-image: url("../img/ruble.svg");
