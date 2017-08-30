@@ -293,6 +293,10 @@ body > input[type="radio"] {
   position: relative;
 }
 
+.user-block-table:hover .table-basket {
+  display: block;
+}
+
 .icon-basket::before {
   content: "";
   position: absolute;
@@ -305,8 +309,27 @@ body > input[type="radio"] {
 }
 
 .icon-basket-active {
-  color: #000000;
   background-color: #f7f6f3;
+  color: #000000;
+}
+
+.icon-basket-active:hover .table-basket {
+  display: block;
+}
+
+.icon-basket-active:before {
+  content: "";
+  position: absolute;
+  left: 16px;
+  top: 8px;
+  width: 21px;
+  height: 20px;
+  background-image: url("../img/basket-red.svg");
+  background-repeat: no-repeat;
+}
+
+.user-block-table {
+  position: relative;
 }
 
 .icon-login:hover {
@@ -363,6 +386,13 @@ body > input[type="radio"] {
 }
 
 .table-basket {
+  display: none;
+  position: absolute;
+  top: 45px;
+  left: -436px;
+  width: 570px;
+  padding: 20px;
+  padding-right: 13px;
   font-size: 13px;
   line-height: 16px;
   color: #000000;
@@ -370,11 +400,17 @@ body > input[type="radio"] {
   border-radius: 5px;
 }
 
+.table-text-right {
+  text-align: right;
+}
+
 .price {
   color: #999999;
 }
 
 .total-price {
+  display: inline-block;
+  margin-bottom: 15px;
   font-size: 15px;
   line-height: 18px;
 }
@@ -541,6 +577,11 @@ body > input[type="radio"] {
   background-repeat: no-repeat;
 }
 
+.catalog .products-item::before {
+  content: "";
+  background: none;
+}
+
 .price-products {
   margin: 0;
   margin-top: -60px;
@@ -688,6 +729,7 @@ body > input[type="radio"] {
 
 .subscribe-form {
   padding: 30px 20px;
+  padding-bottom: 34px;
   background-color: #f8f7f4;
   color: #000000;
   border-radius: 10px;
@@ -773,7 +815,7 @@ body > input[type="radio"] {
 }
 
 .social-link:hover {
-  background-color: #fdfdfd;
+  background-color: #fefffe;
 }
 
 .social-link:active {
@@ -1035,8 +1077,8 @@ body > input[type="radio"] {
 }
 
 .about-list {
-  display: inline-flex;
-  text-align: center;
+  display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
