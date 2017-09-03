@@ -1031,7 +1031,7 @@ body > input[type="radio"] {
   height: 12px;
   background-image: url("../img/icon-right-small.svg");
   background-repeat: no-repeat;
-  transform: rotate(181deg);
+  transform: rotate(-181deg);
 }
 
 .paginator-link:hover {
