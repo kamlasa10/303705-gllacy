@@ -21,7 +21,7 @@
         <li>
           <nav class="main-navigation">
             <ul class="navigation-list">
-              <li class="navigation-item navigation-active">
+              <li class="navigation-item navigation-active navigation-dropdown-active">
                 <a class="navigation-link" href="#">Каталог</a>
                 <ul class="dropdown-list">
                   <li class="dropdown-item new">
@@ -57,7 +57,7 @@
                 <a class="search-loupe" href="#">
                   <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="33" height="33" viewBox="0 0 17 17"><path class="loupe-img" fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/></svg>
                 </a>
-                <form action="#" class="search-form">
+                <form action="#" class="group search-form">
                   <input class="input-custom search-field" type="text" placeholder="Что Ищем?">
                 </form>
               </div>
@@ -67,7 +67,7 @@
                 Вход
                 <svg class="svg-icon-login" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19"><g fill="#000"><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/><path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></g></svg>
               </a>
-              <form action="#" class="form-login">
+              <form action="#" class="group form-login">
                 <input class="input-custom login-field" type="email" name="email" placeholder="Электронная почта">
                 <input class="input-custom login-field" type="password" name="pass" placeholder="Пароль">
                 <ul class="row user-form-row">
@@ -173,21 +173,24 @@
         <ul class="row filter-row">
           <li>
             <div class="filter-item">
-              <b class="filter-title">Сортировка:</b>
-              <div class="filter-shadow">
-                <select class="filter-field filter-field-hover">
-                  <option value="filter">По популярности</option>
-                  <option value="filter">По популярности</option>
-                  <option value="filter">По популярности</option>
-                </select>
+                <b class="filter-title">Сортировка:</b>
+                <div class="filter-shadow">
+                  <select class="filter-field filter-select-custom">
+                    <option value="filter">По популярности</option>
+                    <option value="filter">По популярности</option>
+                    <option value="filter">По популярности</option>
+                  </select>
               </div>
             </div>
           </li>
           <li>
             <div class="filter-item">
-              <b class="filter-title">цена: 100руб-500руб.</b>
+              <b class="filter-title">цена: 100руб. - 500руб.</b>
               <div class="filter-shadow">
-                <input class="filter-field" type="range">
+                <div class="filter-range">
+                  <div class="filter-range-btn filter-range-right"></div>
+                  <div class="filter-range-btn filter-range-left"></div>
+                </div>
               </div>
             </div>
           </li>
@@ -195,14 +198,26 @@
             <div class="filter-item">
               <b class="filter-title">Жирность:</b>
               <div class="filter-shadow">
-                <input class="custom-radio" type="radio" name="fat-%" id="filter-label">
-                <label class="filter-radio-text" for="filter-label">0%</label>
-                <input class="custom-radio" type="radio" name="fat-%" checked id="filter-label2">
-                <label class="filter-radio-text" for="filter-label2">до 10%</label>
-                <input class="custom-radio" type="radio" name="fat-%" id="filter-label3">
-                <label class="filter-radio-text" for="filter-label3">до 30%</label>
-                <input class="custom-radio" type="radio" name="fat-%" id="filter-label4">
-                <label class="filter-radio-text">выше 30%</label>
+                <label class="filter-radio-text" for="filter-label">
+                  <input class="custom-radio" type="radio" name="fat-%" id="filter-label">
+                  <span class="indicator-radio"></span>
+                  0%
+                </label>
+                <label class="filter-radio-text" for="filter-label2">
+                  <input class="custom-radio" type="radio" name="fat-%" checked id="filter-label2">
+                  <span class="indicator-radio"></span>
+                  до 10%
+                </label>
+                <label class="filter-radio-text" for="filter-label3">
+                  <input class="custom-radio" type="radio" name="fat-%" id="filter-label3">
+                  <span class="indicator-radio"></span>
+                  до 30%
+                </label>
+                <label class="filter-radio-text">
+                  <input class="custom-radio" type="radio" name="fat-%" id="filter-label4">
+                  <span class="indicator-radio"></span>
+                  выше 30%
+                </label>
               </div>
             </div>
           </li>
@@ -210,16 +225,31 @@
             <div class="filter-item">
               <b class="filter-title">Наполнители:</b>
               <div class="filter-shadow">
-                <input class="custom-checkbox" type="checkbox" checked id="filter-checkbox">
-                <label class="filter-checkbox-text" for="filter-checkbox">шоколадные</label>
-                <input class="custom-checkbox" type="checkbox" checked id="filter-checkbox2">
-                <label class="filter-checkbox-text" for="filter-checkbox2">сахарные присыпки</label>
-                <input class="custom-checkbox" type="checkbox" id="filter-checkbox3">
-                <label for="filter-checkbox3" class="filter-text">Фрукты</label>
-                <input class="custom-checkbox" type="checkbox" id="filter-checkbox4">
-                <label class="filter-checkbox-text" for="filter-checkbox4"></label>
-                <input class="custom-checkbox" type="checkbox" id="filter-checkbox5">
-                <label class="filter-checkbox-text" for="filter-checkbox5">джемы</label>
+                <label class="filter-checkbox-text" for="filter-checkbox">
+                  <input class="custom-checkbox" type="checkbox" checked id="filter-checkbox">
+                  <span class="indicator-checkbox"></span>
+                  шоколадные
+                </label>
+                <label class="filter-checkbox-text" for="filter-checkbox2">
+                  <input class="custom-checkbox" type="checkbox" checked id="filter-checkbox2">
+                  <span class="indicator-checkbox"></span>
+                  сахарные присыпки
+                </label>
+                <label for="filter-checkbox3" class="filter-checkbox-text">
+                  <input class="custom-checkbox" type="checkbox" id="filter-checkbox3">
+                  <span class="indicator-checkbox"></span>
+                  Фрукты
+                </label>
+                <label class="filter-checkbox-text" for="filter-checkbox4">
+                  <input class="custom-checkbox" type="checkbox" id="filter-checkbox4">
+                  <span class="indicator-checkbox"></span>
+                  Сиропы
+                </label>
+                <label class="filter-checkbox-text" for="filter-checkbox5">
+                  <input class="custom-checkbox" type="checkbox" id="filter-checkbox5">
+                  <span class="indicator-checkbox"></span>
+                  джемы
+                </label>
               </div>
             </div>
           </li>
