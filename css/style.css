@@ -1215,16 +1215,11 @@ body > input[type="radio"] {
   list-style-type: none;
 }
 
-.pagination-left {
-  margin-left: auto;
-}
-
 .paginator-link {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 26px;
-  height: 26px;
   color: #000000;
   border-radius: 50%;
   text-decoration: none;
