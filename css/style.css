@@ -303,9 +303,9 @@ body > input[type="radio"] {
 }
 
 .icon-basket-active {
-  padding: 10px 0;
-  padding-left: 32px;
-  padding-right: 20px;
+  padding: 8px 0;
+  padding-left: 34px;
+  padding-right: 21px;
 }
 
 .icon-login {
@@ -438,6 +438,31 @@ body > input[type="radio"] {
 
 .table-text-right {
   text-align: right;
+}
+
+.delete {
+  margin-right: 5px;
+  font-size: 0;
+  position: relative;
+}
+
+.delete::before,
+.delete::after {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -15px;
+  width: 18px;
+  height: 2px;
+  background-color: #000000;
+}
+
+.delete::before {
+  transform: rotate(45deg);
+}
+
+.delete::after {
+  transform: rotate(-45deg);
 }
 
 .price {
@@ -617,7 +642,7 @@ body > input[type="radio"] {
   min-height: 405px;
   left: -13px;
   position: absolute;
-  top: 9px;
+  top: -6px;
   width: 293px;
   opacity: 0.5;
   z-index: 2;
@@ -682,7 +707,7 @@ body > input[type="radio"] {
   display: none;
   position: absolute;
   left: 31px;
-  bottom: -20px;
+  bottom: -27px;
 }
 
 .products-item:hover .fest-view {
@@ -690,6 +715,7 @@ body > input[type="radio"] {
 }
 
 .fest-view {
+  z-index: 5;
   font-size: 18px;
   line-height: 24px;
 }
@@ -1215,14 +1241,20 @@ body > input[type="radio"] {
   list-style-type: none;
 }
 
-.paginator-link {
+.paginator-link,
+.paginator-page--active {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 26px;
-  color: #000000;
+  color: #ffffff;
   border-radius: 50%;
   text-decoration: none;
+}
+
+.paginator-page--active {
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .pagination-btn {
@@ -1266,12 +1298,12 @@ body > input[type="radio"] {
   background-color: #9db1a5;
 }
 
-.paginator-link:active {
+.pagination-link:active {
+  color: #000;
   background-color: #ffffff;
 }
 
-.paginator-item--current .paginator-link {
-  color: #000000;
+.paginator-link:active {
   background-color: #ffffff;
 }
 
@@ -1304,6 +1336,8 @@ body > input[type="radio"] {
   padding: 0 5px;
   margin-top: -11px;
 }
+
+
 
 .user-left-row {
   margin: 0 -22px;
