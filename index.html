@@ -52,7 +52,7 @@
             </nav>
           </li>
           <li class="user-left">
-            <ul class="row user-row">
+            <ul class="row user-row user-row-width">
               <li>
                 <div class="header-search">
                   <a class="search-loupe" href="#">
@@ -353,23 +353,6 @@
       </div>
     </div>
   </div>
-  <script>
-    var btn = document.querySelector('.btn-recall');
-    var popup = document.querySelector('.modal-feedback');
-    var close = document.querySelector('.modal-content-close');
-
-    btn.addEventListener('click', function (evt) {
-      evt.preventDefault();
-      popup.classList.add('modal-show');
-
-    });
-
-    close.addEventListener('click', function (evt) {
-      evt.preventDefault();
-      popup.classList.remove('modal-show');
-
-    });
-
-  </script>
+  <script src="js/main.js"></script>
   </body>
 </html>

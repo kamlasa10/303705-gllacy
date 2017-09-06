@@ -302,6 +302,10 @@ body > input[type="radio"] {
   transition: 0.2s;
 }
 
+.icon-basket {
+  padding-right: 25px;
+}
+
 .icon-basket-active {
   padding: 8px 0;
   padding-left: 34px;
@@ -337,7 +341,7 @@ body > input[type="radio"] {
 .icon-basket::before {
   content: "";
   position: absolute;
-  left: 0px;
+  left: 8px;
   top: 10px;
   width: 21px;
   height: 20px;
@@ -1352,7 +1356,9 @@ body > input[type="radio"] {
   margin-top: -11px;
 }
 
-
+.user-row-width li {
+  padding: 0 4px;
+}
 
 .user-left-row {
   margin: 0 -22px;
