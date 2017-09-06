@@ -349,9 +349,27 @@
         <input class="input-custom" type="text" name="name" placeholder="Как вас зовут?">
         <input class="input-custom" type="email" name="email" placeholder="Ваша почта для ответа?">
         <textarea class="feedback-description" placeholder="Напишите что-нибудь..."></textarea>
-        <input class="btn btn-right" type="submit" value="Отправить">
+        <input class="btn btn-feedback" type="submit" value="Отправить">
       </div>
     </div>
   </div>
+  <script>
+    var btn = document.querySelector('.btn-recall');
+    var popup = document.querySelector('.modal-feedback');
+    var close = document.querySelector('.modal-content-close');
+
+    btn.addEventListener('click', function (evt) {
+      evt.preventDefault();
+      popup.classList.add('modal-show');
+
+    });
+
+    close.addEventListener('click', function (evt) {
+      evt.preventDefault();
+      popup.classList.remove('modal-show');
+
+    });
+
+  </script>
   </body>
 </html>
