@@ -287,6 +287,7 @@
       </ul>
     </main>
     <section class="maps">
+      <iframe class="map" src="https://yandex.ua/map-widget/v1/-/CBUbU6GioC" width="100%" height="430" frameborder="0"></iframe>
       <div class="container">
         <div class="contacts">
           <p class="contacts-title">Адрес главного офиса<br> и офлайн магазина</p>
@@ -300,7 +301,7 @@
           <p class="contacts-title">
             (с 10 до 20 ежедневно)
           </p>
-          <a class="btn btn-recall" href="#">Форма обратной связи</a>
+          <a class="btn btn-recall" href="feedback.html">Форма обратной связи</a>
         </div>
       </div>
     </section>
@@ -342,15 +343,16 @@
         </ul>
       </div>
     </footer>
+    <div class="overlay"></div>
     <div class="modal-content modal-feedback">
       <button class="modal-content-close" title="Закрыть">Закрыть</button>
-      <div class="feedback-form">
+      <form class="feedback-form">
         <b class="feedback-title">Мы обязательно вам ответим!</b>
         <input class="input-custom" type="text" name="name" placeholder="Как вас зовут?">
         <input class="input-custom" type="email" name="email" placeholder="Ваша почта для ответа?">
         <textarea class="feedback-description" placeholder="Напишите что-нибудь..."></textarea>
-        <input class="btn btn-feedback" type="submit" value="Отправить">
-      </div>
+        <button class="btn btn-feedback" type="submit">Отправить</button>
+      </form>
     </div>
   </div>
   <script src="js/main.js"></script>
