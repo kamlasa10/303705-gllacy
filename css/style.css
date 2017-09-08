@@ -157,12 +157,16 @@ body > input[type="radio"] {
   display: block;
   padding: 7px 0;
   padding-left: 20px;
+  font-size: 14px;
+  line-height: 16px;
   color: #000000;
   text-decoration: none;
 }
 
 .new .dropdown-link {
+  font-size: 14px;
   font-weight: bold;
+  line-height: 16px;
   border-bottom: 1px solid #d1d0ce;
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
@@ -310,8 +314,10 @@ body > input[type="radio"] {
 .icon-basket{
   display: block;
   position: relative;
-  padding: 8px 16px;
+  padding: 12px 16px;
   padding-left: 44px;
+  font-size: 14px;
+  line-height: 16px;
   color: #ffffff;
   font-weight: 500;
   text-decoration: none;
@@ -323,13 +329,13 @@ body > input[type="radio"] {
 }
 
 .icon-basket {
-  padding-right: 25px;
+  padding-right: 32px;
 }
 
 .icon-basket-active {
-  padding: 8px 0;
-  padding-left: 34px;
-  padding-right: 21px;
+  padding: 10px 0;
+  padding-left: 42px;
+  padding-right: 20px;
 }
 
 .icon-login {
@@ -338,7 +344,7 @@ body > input[type="radio"] {
 
 .svg-icon-login {
   position: absolute;
-  left: 17px;
+  left: 19px;
   top: 11px;
 }
 
@@ -361,7 +367,7 @@ body > input[type="radio"] {
 .icon-basket::before {
   content: "";
   position: absolute;
-  left: 8px;
+  left: 13px;
   top: 10px;
   width: 21px;
   height: 20px;
@@ -381,7 +387,7 @@ body > input[type="radio"] {
 .icon-basket-active:before {
   content: "";
   position: absolute;
-  left: 6px;
+  left: 9px;
   top: 10px;
   width: 21px;
   height: 20px;
@@ -408,8 +414,13 @@ body > input[type="radio"] {
   border-radius: 3px;
 }
 
+.information {
+  margin-right: -5px;
+}
+
 .btn {
   display: inline-block;
+  vertical-align: top;
   padding: 10px 20px;
   font-size: 18px;
   line-height: 24px;
@@ -534,7 +545,7 @@ body > input[type="radio"] {
 
 .slider {
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 34px;
   padding-top: 276px;
   text-align: center;
   color: #ffffff;
@@ -554,10 +565,12 @@ body > input[type="radio"] {
 }
 
 .btn-big {
-  padding: 12px 50px;
+  min-width: 278px;
+  padding: 12px 40px;
+  padding-left: 30px;
   font-weight: bold;
-  font-size: 31px;
-  line-height: 41px;
+  font-size: 32px;
+  line-height: 44px;
   text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
 }
 
@@ -625,7 +638,7 @@ body > input[type="radio"] {
 }
 
 .action {
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 }
 
 .action-item {
@@ -658,7 +671,7 @@ body > input[type="radio"] {
 }
 
 .products-height {
-  margin-bottom: 56px;
+  margin-bottom: 51px;
 }
 
 .products-item {
@@ -673,8 +686,8 @@ body > input[type="radio"] {
 .products-item:before {
   content: "";
   position: absolute;
-  top: -1px;
-  left: 10px;
+  top: 5px;
+  left: 11px;
   width: 61px;
   height: 61px;
   background-image: url("../img/hit.svg");
@@ -708,12 +721,16 @@ body > input[type="radio"] {
 
 .price-products {
   margin: 0;
-  margin-top: -57px;
-  margin-left: -102px;
+  margin-top: -59px;
+  margin-left: -113px;
   padding: 0;
   font-size: 30px;
   line-height: 35px;
   font-weight: bold;
+}
+
+.products-height .price-products {
+  margin-left: -104px;
 }
 
 .products-kg {
@@ -740,6 +757,10 @@ body > input[type="radio"] {
   margin-top: 25px;
   padding: 0;
   text-align: center;
+}
+
+.products-height .products-description {
+  margin-top: 27px;
 }
 
 .products-link {
@@ -776,6 +797,7 @@ body > input[type="radio"] {
 
 .features {
   width: 100%;
+  margin-top: 7px;
   margin-bottom: 22px;
   padding: 25px 20px;
   color: #000000;
@@ -862,6 +884,7 @@ body > input[type="radio"] {
   min-height: 220px;
   margin-top: 16px;
   padding: 5px;
+  padding-left: 7px;
   background-color: #f9eae5;
   background-image: url("../img/bg-post.svg");
   border-radius: 10px;
@@ -897,7 +920,7 @@ body > input[type="radio"] {
   width: 301px;
   bottom: 75px;
   right: 10px;
-  padding: 26px 20px;
+  padding: 25px 26px;
   color: #000000;
   background: #ffffff;
   border-radius: 15px;
@@ -905,8 +928,9 @@ body > input[type="radio"] {
 
 .contacts-title {
   margin: 0;
-  margin-bottom: 20px;
   padding: 0;
+  margin-top: 4px;
+  margin-bottom: 14px;
   font-size: 14px;
   line-height: 20px;
 }
@@ -918,8 +942,8 @@ body > input[type="radio"] {
 
 .order-telefone {
   margin: 0;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-top: 8px;
+  margin-bottom: 11px;
   padding: 0;
 }
 
@@ -994,8 +1018,8 @@ body > input[type="radio"] {
 .about-item-iconed::before {
   content: "";
   position: absolute;
-  top: 3px;
-  left: -10px;
+  top: 5px;
+  left: -3px;
   width: 15px;
   height: 13px;
   background-image: url("../img/heart.svg");
@@ -1026,8 +1050,12 @@ body > input[type="radio"] {
   padding-right: 0;
 }
 
+.about-link-right {
+  padding-right: 32px;
+}
+
 .main-footer {
-  padding: 15px 25px;
+  padding: 10px 25px;
 }
 
 .htmlacademy-link {
@@ -1047,7 +1075,7 @@ body > input[type="radio"] {
 }
 
 .breadcrumbs {
-  margin-top: -16px;
+  margin-top: -18px;
 }
 
 .breadcrumbs-list {
@@ -1084,7 +1112,7 @@ body > input[type="radio"] {
 
 .heading-title {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 43px;
   padding: 0;
   font-size: 35px;
   line-height: 41px;
@@ -1289,6 +1317,10 @@ body > input[type="radio"] {
   box-shadow: inset 0 2px 1px 0 #696969;
 }
 
+.paginator {
+  margin-bottom: 34px;
+}
+
 .paginator-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1413,7 +1445,7 @@ body > input[type="radio"] {
 
 .user-row li {
   padding: 0 5px;
-  margin-top: -11px;
+  margin-top: -8px;
 }
 
 .user-row-width li {
@@ -1421,7 +1453,7 @@ body > input[type="radio"] {
 }
 
 .user-left-row {
-  margin: 0 -22px;
+  margin: 0 -20px;
 }
 
 .user-left {
@@ -1445,7 +1477,7 @@ body > input[type="radio"] {
 
 .ml-auto {
   margin-left: auto;
-  margin-top: -7px;
+  margin-top: -6px;
 }
 
 .user-form-row {
@@ -1765,6 +1797,11 @@ body > input[type="radio"] {
   margin-bottom: 10px;
   -ms-flex-item-align: end;
   align-self: flex-end;
+}
+
+.map{
+  z-index:1;
+  width: 100%;
 }
 
 
