@@ -314,7 +314,7 @@ body > input[type="radio"] {
 .icon-basket{
   display: block;
   position: relative;
-  padding: 12px 16px;
+  padding: 9px 11px;
   padding-left: 44px;
   font-size: 14px;
   line-height: 16px;
@@ -333,7 +333,7 @@ body > input[type="radio"] {
 }
 
 .icon-basket-active {
-  padding: 10px 0;
+  padding: 8px 0;
   padding-left: 42px;
   padding-right: 20px;
 }
@@ -344,8 +344,8 @@ body > input[type="radio"] {
 
 .svg-icon-login {
   position: absolute;
-  left: 19px;
-  top: 11px;
+  left: 14px;
+  top: 6px;
 }
 
 .svg-icon-login path {
@@ -367,8 +367,8 @@ body > input[type="radio"] {
 .icon-basket::before {
   content: "";
   position: absolute;
-  left: 13px;
-  top: 10px;
+  left: 8px;
+  top: 6px;
   width: 21px;
   height: 20px;
   background-image: url("../img/basket.svg");
@@ -387,8 +387,8 @@ body > input[type="radio"] {
 .icon-basket-active:before {
   content: "";
   position: absolute;
-  left: 9px;
-  top: 10px;
+  left: 13px;
+  top: 6px;
   width: 21px;
   height: 20px;
   background-image: url("../img/basket-red.svg");
@@ -1445,7 +1445,11 @@ body > input[type="radio"] {
 
 .user-row li {
   padding: 0 5px;
-  margin-top: -8px;
+  margin-top: -2px;
+}
+
+.user-row li:first-child {
+  margin-top: -4px;
 }
 
 .user-row-width li {
