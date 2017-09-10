@@ -717,7 +717,7 @@ body > input[type="radio"] {
   left: -13px;
   position: absolute;
   top: -6px;
-  bottom: 0;
+  bottom: -40px;
   width: 293px;
   opacity: 0.5;
   z-index: 2;
@@ -1178,6 +1178,10 @@ body > input[type="radio"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+}
+
+.filter-select-custom::-ms-expand {
+  display: none;
 }
 
 .filter-range {
