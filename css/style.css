@@ -1086,6 +1086,7 @@ body > input[type="radio"] {
 
 .footer-logo {
   margin-left: 6px;
+  font-size: 0;
 }
 
 .footer-logo img {
